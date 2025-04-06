@@ -12,8 +12,8 @@
 
 ### ✅ Prerequisites
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- npm or yarn
+- [Node.js](https://nodejs.org/) 
+- npm 
 
 ### 📦 Installation
 
@@ -23,13 +23,11 @@
 
 # Install dependencies
 npm install
-# or
-yarn install
+
 
 # Start the development server
 npm run dev
-# or
-yarn dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
