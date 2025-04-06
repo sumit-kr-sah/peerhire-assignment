@@ -115,8 +115,6 @@ The Freelancer Dashboard is designed to help professionals find and manage their
 
 ---
 
-Let me know if you'd like to include screenshots, demo GIFs, or badges in the README as well — they can really help showcase your project!
-
 
 
 ## 🎨 Customization
