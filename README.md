@@ -1,91 +1,137 @@
-## Features
+## 🛠️ Technology Stack
 
-### For Clients
-- **Find Skilled Freelancers**: Browse through profiles of experienced professionals
-- **Post Projects Easily**: Create project listings with detailed requirements
-- **Track Project Progress**: Monitor ongoing projects in real-time
+- **Frontend**: [Next.js](https://nextjs.org/), [React](https://reactjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/)
+- **State Management**: React Hooks (`useState`, `useEffect`)
+- **Data Persistence**: API backend for data + `localStorage` for client-side state
+- **Styling**: Fully responsive UI with light/dark theme support
+- **Icons**: [Lucide React](https://lucide.dev/) for consistent iconography
 
-### For Freelancers
-- **Discover New Projects**: Find relevant work aligned with your skills
-- **Set Your Own Rates**: Control your pricing and get paid fairly
-- **Work From Anywhere**: Complete flexibility in your work environment
+---
 
-## Tech Stack
+## ⚙️ Getting Started
 
-- **Frontend**: React 19, Next.js 15
-- **UI/Components**: 
-  - Radix UI components
-  - Tailwind CSS for styling
-  - Framer Motion for animations
-- **Form Handling**: React Hook Form with Zod validation
-- **State Management**: React hooks and context
-- **Theming**: Next-themes for dark/light mode
+### ✅ Prerequisites
 
-## Installation Instructions
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- npm or yarn
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/freelanceconnect.git
-   cd freelanceconnect
-   ```
+### 📦 Installation
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/peerhire.git
+cd peerhire
 
-3. **Run the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   ```
+# Install dependencies
+npm install
+# or
+yarn install
 
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000) to see the application
+# Start the development server
+npm run dev
+# or
+yarn dev
+```
 
-## Usage Guide
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-### For Clients
-1. Navigate to the client portal
-2. Create your client profile
-3. Post a new project with detailed requirements
-4. Review freelancer bids and proposals
-5. Select a freelancer and begin collaboration
-6. Track project progress and provide feedback
+---
 
-### For Freelancers
-1. Access the freelancer dashboard
-2. Complete your professional profile
-3. Browse available projects
-4. Submit proposals with your rates and timeline
-5. Communicate with potential clients
-6. Deliver high-quality work and build your reputation
-
-## Folder Structure
+## 📁 Project Structure
 
 ```
-freelanceconnect/
-├── app/                    # Next.js app directory
-│   ├── api/                # API routes
-│   ├── client/             # Client dashboard pages
-│   ├── freelancer/         # Freelancer dashboard pages
-│   ├── page.jsx            # Homepage
-│   └── layout.jsx          # Root layout component
-├── components/             # Reusable components
-│   ├── ui/                 # UI components
-│   ├── bid-modal.jsx       # Bid submission modal
-│   ├── rating-modal.jsx    # Rating and feedback modal
-│   └── theme-toggle.jsx    # Dark/light mode toggle
-├── lib/                    # Utility functions and helpers
-├── hooks/                  # Custom React hooks
-├── styles/                 # Global styles and CSS modules
-├── public/                 # Static assets
-└── data/                   # Mock data and sample content
+/
+├── app/
+│   ├── client/
+│   │   └── page.jsx           # Client dashboard
+│   ├── freelancer/
+│   │   └── page.jsx           # Freelancer dashboard
+│   ├── globals.css            # Global styles
+│   ├── layout.jsx             # Root layout
+│   └── page.jsx               # Main landing page
+├── components/
+│   ├── ui/                    # Shadcn UI components library
+│   ├── bid-modal.jsx          # Bidding functionality
+│   └── rating-modal.jsx       # Rating functionality
+├── data/
+│   ├── freelancers.js         # Freelancer mock data
+│   └── projects.js            # Project mock data
+├── lib/
+│   └── utils.ts               # Utility functions
+└── public/                    # Static assets
+
 ```
+
+
+## 💡 Usage Guide
+
+### 👩‍💼 Client Dashboard
+
+1. **Browse Freelancers** in a responsive card layout  
+2. **Search & Filter** by name, description, or skills  
+3. **View Profiles** to get full freelancer details  
+4. **Manage Projects** by tracking progress and marking them as complete  
+5. **Rate Work** with performance feedback and star ratings
+
+### 🧑‍💻 Freelancer Dashboard
+
+The Freelancer Dashboard is designed to help professionals find and manage their project opportunities efficiently.
+
+#### 🔑 Key Features
+
+- **Project Discovery**:
+  - Search by project name or description  
+  - Filter by required skills  
+  - Sort by budget (high to low / low to high)  
+  - Sort by timeline (shortest to longest)
+
+- **Bid Management**:
+  - Submit detailed proposals for projects  
+  - Customize bid amount and delivery timeline  
+  - Track the status of all submitted bids (pending, accepted, rejected)  
+  - View your bidding history  
+
+- **User Experience**:
+  - Responsive design across all devices  
+  - Light/Dark mode toggle  
+  - Smooth animations via Framer Motion  
+  - Real-time proposal status updates  
+
+#### ⚙️ Implementation Details
+
+- Built with React Hooks (`useState`, `useEffect`)
+- LocalStorage used to persist bid data across sessions
+- `fetch` API for retrieving project information dynamically
+- Optimized filtering and sorting functions
+- Accessible, modern UI with Shadcn UI components
+
+#### 🚀 Getting Started as a Freelancer
+
+1. Navigate to `/freelancer` to access the dashboard  
+2. Use the search and filters to find relevant projects  
+3. Click a project card to view details  
+4. Submit a proposal with a competitive bid  
+5. Track your bid status in the **My Bids** section
+
+---
+
+Let me know if you'd like to include screenshots, demo GIFs, or badges in the README as well — they can really help showcase your project!
+
+
+
+## 🎨 Customization
+
+### Theme Support
+- Toggle between light and dark modes via the **theme switcher** in the UI.
+
+### Styling
+- Built with **Tailwind CSS** for fast customization.
+- Modify the `tailwind.config.js` to personalize styles.
+
+---
+
+## 🙏 Acknowledgments
+
+- [Lucide React](https://lucide.dev/) for the icons
+- [Framer Motion](https://www.framer.com/motion/) for smooth UI animations
+- [Tailwind CSS](https://tailwindcss.com/) for the styling framework
