@@ -89,12 +89,3 @@ freelanceconnect/
 ├── public/                 # Static assets
 └── data/                   # Mock data and sample content
 ```
-
-
-
-## Contact
-
-For any inquiries or support, please reach out to:
-- Email: contact@freelanceconnect.com
-- Twitter: [@freelanceconnect](https://twitter.com/freelanceconnect)
-- Website: [www.freelanceconnect.com](https://www.freelanceconnect.com) 
