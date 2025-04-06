@@ -1,7 +1,3 @@
-# FreelanceConnect
-
-FreelanceConnect is a modern freelancing platform that connects talented freelancers with clients for successful project collaborations. Built with Next.js and React, it provides a seamless experience for both clients and freelancers.
-
 ## Features
 
 ### For Clients
@@ -94,20 +90,7 @@ freelanceconnect/
 └── data/                   # Mock data and sample content
 ```
 
-## Contributing
 
-We welcome contributions to FreelanceConnect! Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add some feature'`)
-5. Push to the branch (`git push origin feature/your-feature`)
-6. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
 
